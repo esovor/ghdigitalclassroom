@@ -2,7 +2,7 @@
 
 export default function Secondary() {
     return (
-        <div>
+        <div className="container">
             <h1>Secondary Levels</h1>
 
         </div>

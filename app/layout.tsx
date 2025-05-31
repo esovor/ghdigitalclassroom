@@ -1,16 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+//import { Geist, Geist_Mono } from "next/font/google";
+
+import { Roboto, Montserrat } from 'next/font/google'
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+//
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+const roboto = Roboto({
+    weight: ['300', '400', '500', '700'], // Add common weights for flexibility
+    subsets: ['latin'],                  // Add more subsets if needed (e.g., 'latin-ext')
+    display: 'swap',                     // Ensures better performance and UX
+    variable: '--font-roboto',           // Enables usage via CSS variable
+    preload: true,                       // Ensures font is preloaded for performance
+})
+
+const montserrat = Montserrat({
+    weight: ['300', '400', '500', '600', '700'], // More weights for styling flexibility
+    subsets: ['latin'],                          // Add others like 'latin-ext' if needed
+    display: 'swap',                             // Prevents invisible text (FOIT)
+    variable: '--font-montserrat',               // Makes it accessible via CSS variable
+    preload: true,                               // Optimizes loading
+})
+
+
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +48,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      {/*<body className={`${geistSans.variable} ${geistMono.variable}`}>*/}
+      <body className={`${roboto.variable} ${montserrat.variable}`}>
         {children}
       </body>
     </html>
