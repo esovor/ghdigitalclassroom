@@ -50,3 +50,7 @@
     }
 }
 
+
+.section-box {
+    @apply py-10
+}
