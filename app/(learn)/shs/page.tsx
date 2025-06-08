@@ -1,5 +1,4 @@
-
-
+import Link from "next/link";
 
 
 export default function Secondary() {
@@ -13,6 +12,21 @@ export default function Secondary() {
             </section>
 
         <section>
+            <div>
+                <h2>STEM Education</h2>
+                <div><Link href="#">Form 1</Link></div>
+                <div><Link href="#">Form 1</Link></div>
+                <div><Link href="#">Form 1</Link></div>
+            </div>
+
+
+            <div>
+                <h2>Non-STEM Education</h2>
+                <div><Link href="#">Form 1</Link></div>
+                <div><Link href="#">Form 1</Link></div>
+                <div><Link href="#">Form 1</Link></div>
+            </div>
+
 
         </section>
 

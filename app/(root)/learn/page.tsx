@@ -1,40 +1,49 @@
 import Link from "next/link";
 
-export default function Learn () {
+import {LearnLevels} from "@/app/sections"
+
+
+export default function Primary () {
     return (
-        <div>
-            <h1>Learn and Revise</h1>
+        <>
+            <div>
+                <h1>Learn and Revise</h1>
+                <p>Learn and revise with Ghana Digital School for primary, secondary and post-16 students.</p>
+            </div>
+
+
             <section>
-                <div>
-                    <Link href="/primary"><h2>Primary</h2></Link>
-                    <p>Basic 4 to Basic 6</p>
-                </div>
+                <LearnLevels/>
+            </section>
 
 
-                <div>
-                    <Link href=""><h2>Junior High</h2></Link>
-                    <p>Basic 7 to Basic 9</p>
-                </div>
+            <section>
+                <h1>Common Core Subjects</h1>
 
                 <div>
-                    <Link href="/shs"><h2>Senior High</h2></Link>
-                    <p>SHS 1 to SHS 3</p>
+                    <Link href="#"><h2>Mathematics</h2></Link>
                 </div>
-
                 <div>
-                    <Link href=""><h2>Post High</h2></Link>
-                    <p>High + </p>
+                    <Link href="#"><h2>Science</h2></Link>
                 </div>
-
                 <div>
-                    <Link href="/subjects"><h2>Subjects</h2></Link>
-                    <p>A-Z Subjects</p>
-
+                    <Link href="#"><h2>Computing</h2></Link>
                 </div>
+                <div>
+                    <Link href="#"><h2>Creative Arts and Design</h2></Link>
+                </div>
+
+            </section>
+
+            <section>
+                <h1>GH revision practice quizzes</h1>
+                <p>Free quizzes based on past papers. Practise maths, science, English and
+                    many more subjects.</p>
             </section>
 
 
 
-        </div>
+
+        </>
     );
 }
