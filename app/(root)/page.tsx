@@ -4,10 +4,10 @@ import {HomeLevels} from "../sections"
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
 
        {/*navbar*/}
-        <div className="container">
+        <div>
             <nav>
                 <Link href="/">Home</Link>
                 <Link href="/learn">Learn</Link>
@@ -25,11 +25,11 @@ export default function Home() {
         </section>
 
         <section>
-            <h1>Latest Tends</h1>
+            <h3>Latest Tends</h3>
         </section>
 
         <section>
-            <h1>Latest Tends</h1>
+            <h3>Latest Tends</h3>
         </section>
 
 

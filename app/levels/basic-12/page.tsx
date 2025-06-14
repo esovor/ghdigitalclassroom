@@ -1,4 +1,4 @@
-// import {Basic9Subjects} from "../../sections"
+import {Basic12Subjects} from "../../sections"
 
 export default function Basic12 () {
     return (
@@ -18,7 +18,7 @@ export default function Basic12 () {
 
                 <div>
 
-                    {/*<Basic9Subjects/>*/}
+                    <Basic12Subjects/>
 
 
                 </div>

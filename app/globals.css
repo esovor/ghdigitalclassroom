@@ -1,4 +1,4 @@
-/*@import "tailwindcss";*/
+@import "tailwindcss";
 
 @layer base {
     h1 {
@@ -6,6 +6,9 @@
     }
     h2 {
         font-size: var(--text-3xl);
+    }
+    h3 {
+        font-size: var(--text-2xl);
     }
 }
 
@@ -54,3 +57,24 @@
 .section-box {
     @apply py-10
 }
+
+
+.cus_Link {
+    @apply hover:underline hover:text-fuchsia-600
+}
+
+.cus_LinkRED {
+    @apply hover:underline hover:text-red-800
+}
+
+
+@layer components {
+    .sectionHeaderRed {
+        background: var(--color-red-600);
+        color: var(--color-white);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+

@@ -5,26 +5,27 @@ export default function Basic7 () {
         <div>
 
             <section>
-                <h1>Basic 7 </h1>
-                <p>The first stage of the three-year Junior High School in Ghana</p>
+                <div className="container">
+                    <h1>Basic 7 </h1>
+                    <p>The first stage of the three-year Junior High School in Ghana</p>
+                </div>
+
             </section>
 
 
-            <section>
+            <section className="container">
+
+
+
                 <div>
-                    <h2>All Basic 7 Subjects</h2>
+                    <h3>All Basic 7 Subjects</h3>
                     <p>These subjects may contain both guides and videos.</p>
                 </div>
 
-                <div>
 
+                <div className="pt-4 pb-4">
                     <Basic7Subjects/>
-
-
                 </div>
-
-
-
 
             </section>
 
