@@ -64,7 +64,7 @@
 }
 
 .cus_LinkRED {
-    @apply hover:underline hover:text-red-800
+    @apply hover:underline hover:text-red-800 focus:underline focus:text-red-800
 }
 
 
