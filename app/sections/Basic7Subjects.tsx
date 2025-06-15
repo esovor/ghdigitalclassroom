@@ -1,36 +1,19 @@
-import Image from "next/image";
-import {Computing} from "../../public/images"
-import Link from "next/link";
+// components/Basic7Subjects.tsx
+
+import React from 'react';
+import { jhSubjects } from '@/app/constant';
+import SubjectCard from '@/app/cus-components/SubjectCard';
+import {Subject} from "@/app/constant/types";
 
 
-export default function Basic7Subjects () {
+
+export default function Basic7Subjects() {
     return (
-
-
-
-        <div>
-
-
-            <Link  className="cus_Link" href="#">
-
-
-                    <div className='flex items-center space-x-2'>
-                        <Image
-                            src={Computing}
-                            alt="Computing"
-                            width={120}
-                            height={120}
-                            // sizes="(max-width: 640px) 50px, (max-width: 1200px) 150px, 150px"
-                        />
-                        <p className="text-xl font-semibold">English Language</p>
-                    </div>
-
-
-            </Link>
-
-
-
-        </div>
-
-    )
-};
+        <section className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
+            {jhSubjects.map((subject: Subject) => (
+                <SubjectCard
+                    key={subject.subLabel} {...subject} />
+            ))}
+        </section>
+    );
+}

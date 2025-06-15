@@ -1,8 +1,8 @@
-import Computing from "./computing.png"
-import CAD from "./art.png"
+import Sample from "./sample.jpg"
+
 
 
 export {
-    Computing,
-    CAD,
+    Sample,
+
 }

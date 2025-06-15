@@ -7,7 +7,7 @@ export default function JuniorHigh () {
         <div>
 
 
-            <section className="sectionHeader bg-blue-500">
+            <section className="sectionHeader-primary">
                 <div className="container">
                     <h1 className="font-bold">Junior High Levels </h1>
                     <p>Basic 7 to Basic 9 </p>
@@ -18,8 +18,8 @@ export default function JuniorHigh () {
                 <div className="container">
                     <h2 className="font-semibold">I am in ...</h2>
 
-                    <div>
-                        <Link className="btn-primary" href="/levels/basic-7"><span className="font-semibold">Basic 7</span></Link>
+                    <div className="sm:flex sm:justify-around">
+                        <Link className="btn-primary" href="/levels/basic-7">Basic 7</Link>
                         <Link className="btn-primary" href="/levels/basic-8">Basic 8</Link>
                         <Link className="btn-primary" href="/levels/basic-9">Basic 9</Link>
                     </div>
