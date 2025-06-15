@@ -21,7 +21,7 @@ const SubjectCard: React.FC<Subject> = ({ subURL, subImg, subLabel }) => {
                         <Image
                             src={subImg}
                             alt={subLabel}
-                            width={250}
+                            width={200}
                             // height={150}
                             className="object-contain"
                             // sizes could be adjusted if responsive behavior is needed

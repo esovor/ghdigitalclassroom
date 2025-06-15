@@ -9,7 +9,7 @@ import {Subject} from "@/app/constant/types";
 
 export default function Basic7Subjects() {
     return (
-        <section className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <section className="grid grid-cols-1 gap-4">
             {jhSubjects.map((subject: Subject) => (
                 <SubjectCard
                     key={subject.subLabel} {...subject} />
