@@ -69,12 +69,20 @@
 
 
 @layer components {
-    .sectionHeaderRed {
-        background: var(--color-sky-700);
+    .sectionHeader {
+        /*background: var(--color-sky-700);*/
         color: var(--color-white);
         padding-top: 40px;
         padding-bottom: 40px;
+        /*font-weight: bold;*/
+
     }
+
+    .btn-primary {
+        @apply block text-center mt-3 border-2 px-4 py-3 font-semibold
+        hover:bg-blue-500 hover:text-white hover:underline
+    }
+
 }
 
 

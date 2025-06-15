@@ -7,26 +7,33 @@ export default function JuniorHigh () {
         <div>
 
 
-            <div className="sectionHeaderRed">
+            <section className="sectionHeader bg-blue-500">
                 <div className="container">
                     <h1 className="font-bold">Junior High Levels </h1>
                     <p>Basic 7 to Basic 9 </p>
                 </div>
-            </div>
-
-            <section className="container pt-4 pb-4">
-
-                <h2 className="font-semibold">I am in ...</h2>
-
-                <div><Link className="cus_LinkRED" href="/levels/basic-7"><h3>Basic 7</h3></Link></div>
-                <div><Link className="cus_LinkRED" href="/levels/basic-8"><h3>Basic 8</h3></Link></div>
-                <div><Link className="cus_LinkRED" href="/levels/basic-9"><h3>Basic 9</h3></Link></div>
             </section>
 
-            <div>
+            <section className="bg-gray-100 my-5 py-5">
+                <div className="container">
+                    <h2 className="font-semibold">I am in ...</h2>
+
+                    <div>
+                        <Link className="btn-primary" href="/levels/basic-7"><span className="font-semibold">Basic 7</span></Link>
+                        <Link className="btn-primary" href="/levels/basic-8">Basic 8</Link>
+                        <Link className="btn-primary" href="/levels/basic-9">Basic 9</Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-gray-100">
+                <div className="container">
+                    <h2 className="font-semibold">More topics and activities</h2>
+                </div>
 
 
-            </div>
+
+            </section>
 
 
         </div>

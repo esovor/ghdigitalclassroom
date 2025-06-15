@@ -4,9 +4,9 @@ export default function Basic7 () {
     return (
         <div>
 
-            <section>
+            <section className="sectionHeader bg-sky-950">
                 <div className="container">
-                    <h1>Basic 7 </h1>
+                    <h1>Basic Seven </h1>
                     <p>The first stage of the three-year Junior High School in Ghana</p>
                 </div>
 
